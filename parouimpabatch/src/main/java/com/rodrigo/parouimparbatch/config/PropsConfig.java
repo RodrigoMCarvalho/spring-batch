@@ -12,7 +12,7 @@ public class PropsConfig {
     public PropertySourcesPlaceholderConfigurer config() {
         PropertySourcesPlaceholderConfigurer configurer = new PropertySourcesPlaceholderConfigurer();
         configurer.setLocation(
-                new FileSystemResource("C:\\Users\\rodri\\Desktop\\Desenvolvimento\\Projetos\\spring-batch\\config\\application.properties"));
+                new FileSystemResource("C:\\Users\\rodri\\Desktop\\Desenvolvimento\\Projetos\\spring-batch\\config\\parouimpabatch\\application.properties"));
         return configurer;
     }
 }

@@ -1,0 +1,14 @@
+2022-07-08 19:58:14,130 INFO c.r.p.ParOuImparBatchApplication [main] Starting ParOuImparBatchApplication using Java 11.0.12 on Rodrigo with PID 19668 (C:\Users\rodri\Desktop\Desenvolvimento\Projetos\spring-batch\parouimpabatch\target\classes started by rodri in C:\Users\rodri\Desktop\Desenvolvimento\Projetos\spring-batch\parouimpabatch)
+2022-07-08 19:58:14,130 INFO c.r.p.ParOuImparBatchApplication [main] No active profile set, falling back to default profiles: default
+2022-07-08 19:58:14,946 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2022-07-08 19:58:15,315 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2022-07-08 19:58:15,662 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-07-08 19:58:15,904 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2022-07-08 19:58:16,109 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2022-07-08 19:58:16,232 INFO c.r.p.ParOuImparBatchApplication [main] Started ParOuImparBatchApplication in 3.785 seconds (JVM running for 5.027)
+2022-07-08 19:58:16,664 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeParOuImparJob]] launched with the following parameters: [{run.id=6}]
+2022-07-08 19:58:16,887 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [imprimeParOuImparStep]
+2022-07-08 19:58:17,887 INFO o.s.b.c.s.AbstractStep [main] Step: [imprimeParOuImparStep] executed in 1s0ms
+2022-07-08 19:58:17,950 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeParOuImparJob]] completed with the following parameters: [{run.id=6}] and the following status: [COMPLETED] in 1s233ms
+2022-07-08 19:58:17,966 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-07-08 19:58:17,981 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
