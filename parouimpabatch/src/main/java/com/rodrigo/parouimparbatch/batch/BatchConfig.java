@@ -1,4 +1,4 @@
-package com.rodrigo.parouimparbatch;
+package com.rodrigo.parouimparbatch.batch;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
