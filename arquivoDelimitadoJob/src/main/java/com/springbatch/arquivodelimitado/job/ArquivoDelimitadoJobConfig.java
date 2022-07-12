@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @EnableBatchProcessing
 @Configuration
 public class ArquivoDelimitadoJobConfig {
+
 	@Autowired
 	public JobBuilderFactory jobBuilderFactory;
 	
