@@ -8,6 +8,7 @@ import com.springbatch.arquivodelimitado.dominio.Cliente;
 
 @Configuration
 public class LeituraArquivoDelimitadoWriterConfig {
+
 	@Bean
 	public ItemWriter<Cliente> leituraArquivoDelimitadoWriter() {
 		return items -> items.forEach(System.out::println);

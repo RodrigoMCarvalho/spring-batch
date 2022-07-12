@@ -12,6 +12,7 @@ import com.springbatch.arquivolargurafixa.dominio.Cliente;
 
 @Configuration
 public class LeituraArquivoLarguraFixaStepConfig {
+
 	@Autowired
 	public StepBuilderFactory stepBuilderFactory;
 

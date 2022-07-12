@@ -12,6 +12,7 @@ import com.springbatch.arquivodelimitado.dominio.Cliente;
 
 @Configuration
 public class LeituraArquivoDelimitadoStepConfig {
+
 	@Autowired
 	public StepBuilderFactory stepBuilderFactory;
 
