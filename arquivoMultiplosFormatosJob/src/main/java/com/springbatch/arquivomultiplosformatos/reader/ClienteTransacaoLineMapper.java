@@ -28,15 +28,15 @@ public class ClienteTransacaoLineMapper {
     private Map<String, LineTokenizer> tokenizers() {
         Map<String, LineTokenizer> tokenizers = new HashMap<>();
         tokenizers.put("0*", clienteLineTokenizer()); //Toda lina começada por 0 e qualquer coisa, é um cliente
-        tokenizers.put("1*", transacaoLineTokenizer()); //Toda lina começada por 0 e qualquer coisa, é uma transação
+        tokenizers.put("1*", transacaoLineTokenizer()); //Toda lina começada por 1 e qualquer coisa, é uma transação
         return tokenizers;
     }
 
     @SuppressWarnings({"rawtypes", "unchecked"})
     private Map<String, FieldSetMapper> fieldSetMappers() {
         Map<String, FieldSetMapper> fieldSetMappers = new HashMap<>();
-        fieldSetMappers.put("0*", fieldSetMapper(Cliente.class)); //Toda lina começada por 0 e qualquer coisa, é um cliente
-        fieldSetMappers.put("1*",  fieldSetMapper(Transacao.class)); //Toda lina começada por 0 e qualquer coisa, é uma transação
+        fieldSetMappers.put("0*", fieldSetMapper(Cliente.class)); //Toda linha começada por 0 e qualquer coisa, é um cliente
+        fieldSetMappers.put("1*",  fieldSetMapper(Transacao.class)); //Toda linha começada por 1 e qualquer coisa, é uma transação
         return fieldSetMappers;
     }
 

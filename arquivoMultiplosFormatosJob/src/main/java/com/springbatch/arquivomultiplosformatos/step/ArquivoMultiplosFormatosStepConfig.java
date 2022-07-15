@@ -1,5 +1,6 @@
 package com.springbatch.arquivomultiplosformatos.step;
 
+import com.springbatch.arquivomultiplosformatos.reader.ArquivoClienteTransacaoReader;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.batch.item.ItemWriter;
@@ -22,7 +23,7 @@ public class ArquivoMultiplosFormatosStepConfig {
 		return stepBuilderFactory
 				.get("arquivoMultiplosFormatosStep")
 				.chunk(1)
-				.reader(arquivoMultiplosFormatosReader)
+				.reader(new ArquivoClienteTransacaoReader(arquivoMultiplosFormatosReader))
 				.writer(arquivoMultiplosFormatosItemWriter)
 				.build();
 	}
