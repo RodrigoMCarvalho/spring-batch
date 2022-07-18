@@ -27,8 +27,8 @@ public class ClienteTransacaoLineMapper {
 
     private Map<String, LineTokenizer> tokenizers() {
         Map<String, LineTokenizer> tokenizers = new HashMap<>();
-        tokenizers.put("0*", clienteLineTokenizer()); //Toda lina começada por 0 e qualquer coisa, é um cliente
-        tokenizers.put("1*", transacaoLineTokenizer()); //Toda lina começada por 1 e qualquer coisa, é uma transação
+        tokenizers.put("0*", clienteLineTokenizer()); //Toda linha começada por 0 e qualquer coisa, é um cliente
+        tokenizers.put("1*", transacaoLineTokenizer()); //Toda linha começada por 1 e qualquer coisa, é uma transação
         return tokenizers;
     }
 
