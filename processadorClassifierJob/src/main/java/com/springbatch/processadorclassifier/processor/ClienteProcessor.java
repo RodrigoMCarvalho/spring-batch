@@ -1,0 +1,14 @@
+package com.springbatch.processadorclassifier.processor;
+
+import com.springbatch.processadorclassifier.dominio.Cliente;
+import org.springframework.batch.item.ItemProcessor;
+
+                                                    //itemLido, itemRetornado
+public class ClienteProcessor implements ItemProcessor<Cliente,Cliente> {
+
+    @Override
+    public Cliente process(Cliente cliente) {
+        System.out.println(String.format("\nAplicando regras de negócio no cliente %s", cliente.getEmail()));
+        return cliente;
+    }
+}
