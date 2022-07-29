@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ArquivoDelimitadoJobApplication {
 
 	//Rodar com o parâmetro "arquivoClientes=file:files/clientes.txt" na IDE
+	//arquivoClientesSaida=file:files/clientesSaida.txt
 	public static void main(String[] args) {
 		SpringApplication.run(ArquivoDelimitadoJobApplication.class, args);
 	}
