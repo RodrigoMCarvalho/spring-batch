@@ -1,7 +1,9 @@
 package com.springbatch.demonstrativoorcamentario.writer;
 
 import com.springbatch.demonstrativoorcamentario.dominio.GrupoLancamento;
+import org.springframework.batch.core.annotation.AfterChunk;
 import org.springframework.batch.core.annotation.BeforeWrite;
+import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.item.file.FlatFileFooterCallback;
 import org.springframework.stereotype.Component;
 
@@ -25,8 +27,11 @@ public class DemonstrativoOrcamentarioRodape implements FlatFileFooterCallback {
     //listenner
     @BeforeWrite
     public void beforeWrite(List<GrupoLancamento> grupos) {
-        for (GrupoLancamento grupo : grupos) {
-            totalGeral += grupo.getTotal();
-        }
+        grupos.forEach(grupo -> totalGeral += grupo.getTotal());
+    }
+
+    @AfterChunk
+    public void AfterChunk(ChunkContext context) {
+        totalGeral = 0.0;
     }
 }
