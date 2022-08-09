@@ -1,6 +1,7 @@
 package com.springbatch.contasbancarias.dominio;
 
 public class Cliente {
+
 	private String email;
 	private String nome;
 	private Integer idade;

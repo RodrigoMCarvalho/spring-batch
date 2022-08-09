@@ -17,6 +17,7 @@ import com.springbatch.contasbancarias.dominio.Cliente;
 public class LeituraClientesReaderConfig {
 	@Bean
 	public JdbcPagingItemReader<Cliente> leituraClientesReader(
+
 			@Qualifier("appDataSource") DataSource dataSource,
 			PagingQueryProvider queryProvider
 			) {

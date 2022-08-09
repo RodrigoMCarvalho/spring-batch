@@ -10,6 +10,7 @@ import com.springbatch.contasbancarias.dominio.Conta;
 
 @Configuration
 public class GeracaoContaProcessorConfig {
+
 	@Bean
 	public ItemProcessor<Cliente, Conta> geracaoContaProcessor() {
 		return new ClassifierCompositeItemProcessorBuilder<Cliente, Conta>()

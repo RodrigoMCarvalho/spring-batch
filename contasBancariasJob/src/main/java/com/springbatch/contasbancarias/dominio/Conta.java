@@ -3,6 +3,7 @@ package com.springbatch.contasbancarias.dominio;
 import java.text.NumberFormat;
 
 public class Conta {
+
 	private Integer id;
 	private TipoConta tipo;
 	private Double limite;

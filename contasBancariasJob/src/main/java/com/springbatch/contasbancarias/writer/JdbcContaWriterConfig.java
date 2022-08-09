@@ -18,7 +18,7 @@ import java.sql.SQLException;
 public class JdbcContaWriterConfig {
 
 	@Bean
-	public JdbcBatchItemWriter<Conta> jdbcContaWriter(@Qualifier("appDataSource") DataSource dataSource) {
+	public JdbcBatchItemWriter<Conta> jdbcBatchItemWriter(@Qualifier("appDataSource") DataSource dataSource) {
 
 		return new JdbcBatchItemWriterBuilder<Conta>()
 				.dataSource(dataSource)
