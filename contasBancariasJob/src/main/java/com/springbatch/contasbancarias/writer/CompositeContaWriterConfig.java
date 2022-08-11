@@ -14,7 +14,7 @@ public class CompositeContaWriterConfig {
 
     @Bean
     public CompositeItemWriter<Conta> compositeItemWriter(
-            @Qualifier("clienteInvalidoWriter") FlatFileItemWriter flatFileItemWriter,
+            @Qualifier("flatFileItemWriter") FlatFileItemWriter flatFileItemWriter,
             JdbcBatchItemWriter jdbcBatchItemWriter
     ) {
         return new CompositeItemWriterBuilder<Conta>()
