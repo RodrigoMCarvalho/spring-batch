@@ -1,6 +1,5 @@
 package step;
 
-import dominio.DadosBancarios;
 import dominio.Pessoa;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
